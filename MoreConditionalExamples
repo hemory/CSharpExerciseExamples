@@ -1,0 +1,120 @@
+Console.WriteLine("Yo, welcome to the 'How Much Money Do I Owe App");
+            Console.WriteLine();
+
+            Console.WriteLine("Let me get that age?");
+            int thatAge = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Beautiful!, So you are {thatAge}. Let's see how much you owe.");
+
+            if (thatAge <= 5)
+            {
+                Console.WriteLine("So it's your lucky day you little miniature human you.");
+                Console.WriteLine("IT'S FREE!");
+            }
+            else if (thatAge > 5 && thatAge <= 10)
+            {
+                Console.WriteLine("Let me get that $10 spot");
+            }
+            else if (thatAge >= 11 && thatAge <= 16)
+            {
+                Console.WriteLine("Let me get that $20 spot");
+            }
+            else if (thatAge >= 17 && thatAge <= 25)
+            {
+                Console.WriteLine("Let me get that $30 spot");
+            }
+            else
+            {
+                Console.WriteLine("Let me get that $50 spot. Even in death bruh!");
+            }
+			
+			
+			
+			 //int month = 2;
+            //Console.WriteLine("Welcome to the leap year calculator");
+            //Thread.Sleep(2000);
+            //Console.WriteLine("Please Enter a year:");
+            //int year = Convert.ToInt32(Console.ReadLine());
+            //int daysInFebruary = DateTime.DaysInMonth(year, month);
+            //Console.WriteLine($"There are {daysInFebruary} days in February for the year {year}");
+            //if (daysInFebruary == 28)
+            //{
+            //    Console.WriteLine($"{year} is NOT a leap year");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{year} IS a leap year");
+            //}
+            //Console.ReadLine();
+			
+			
+            Console.WriteLine("Enter side 1...");
+            double angle1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter side 2...");
+            double angle2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter side 3...");
+            double angle3 = double.Parse(Console.ReadLine());
+
+            if (angle1 == angle2 && angle2 == angle3 && angle3 == angle1 && angle1 + angle2 + angle3 == 180)
+            {
+                Console.WriteLine("Equilateral");
+
+            }
+            else if (angle1 != angle2 && angle2 == angle3 && angle3 != angle1 && angle1 + angle2 + angle3 == 180 || angle2 == angle1 && angle1 != angle3 && angle1 + angle2 + angle3 == 180 || angle3 == angle1 && angle2 != angle3 && angle1 + angle2 + angle3 == 180)
+            {
+                Console.WriteLine("Isoceles");
+
+            }
+            else if (angle1 != angle2 && angle2 != angle3 && angle3 != angle1 && angle1 + angle2 + angle3 == 180)
+            {
+                Console.WriteLine("Scalene");
+
+            }
+            else if (angle1 + angle2 + angle3 != 180)
+            {
+                Console.WriteLine("Not a triangle");
+
+            }
+
+            Console.ReadLine();
+			
+			
+			
+			Console.WriteLine("What is your age?");
+            string ageAsString = Console.ReadLine();
+
+            int age;
+            bool parseItUp = int.TryParse(ageAsString, out age);
+
+            
+
+
+            if (parseItUp)
+            {
+                string decision = "";
+                if (age > 0)
+                {
+
+                    if (age <= 16)
+                    {
+                        decision = "not old enough";
+                    }
+                    else
+                    {
+                        decision = "old enough";
+                    }
+                }
+
+                Console.WriteLine($"Your are {decision}");
+
+            }
+            else
+            {
+                Console.WriteLine("Not a number");
+            }
+
+            
+
+
+
+            Console.ReadLine();
