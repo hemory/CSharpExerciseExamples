@@ -1,0 +1,78 @@
+//Make sure that num is not negative
+            int num = 0;
+
+            if (num < 0)
+            {
+                //assign 0 to it so that we can move on
+            }
+			
+			
+ //Calculate the value of principal plus the interest
+            Console.WriteLine("Enter Principal");
+            double principal = Convert.ToDouble(Console.ReadLine());
+
+            //Make sure the principle is not negative
+            if (principal < 0)
+            {
+                Console.WriteLine("The principal cannot be negative");
+                principal = 0;
+            }
+
+            Console.WriteLine("Enter the interest rate");
+            double interest = Convert.ToDouble(Console.ReadLine());
+
+            //Make sure the interest is not negative
+            if (interest < 0)
+            {
+                Console.WriteLine("The interest cannot be negative");
+                interest = 0;
+            }
+
+            double interestPaid = principal * (interest / 100);
+
+            //Calculate the total
+            double total = principal + interestPaid;
+
+            Console.WriteLine(principal);
+            Console.WriteLine($"{interest}%");
+            Console.WriteLine();
+            Console.WriteLine(interestPaid);
+            Console.WriteLine(total);
+			
+//NESTED IF EXAMPLE
+//Calculate the value of principal plus the interest
+            //Define a max interest rate
+            int maxInterestRate = 50;
+            Console.WriteLine("Enter Principal");
+            double principal = Convert.ToDouble(Console.ReadLine());
+
+            //Make sure the principle is not negative
+            if (principal < 0)
+            {
+                Console.WriteLine("The principal cannot be negative");
+            }
+            else //only go here if interest is > 0
+            {
+                Console.WriteLine("Enter the interest rate");
+                double interest = Convert.ToDouble(Console.ReadLine());
+
+                //Make sure the interest is not negative
+                if (interest < 0 || interest > maxInterestRate)
+                {
+                    Console.WriteLine($"The interest cannot be negative or greater than {maxInterestRate}");
+                    interest = 0;
+                }
+                else
+                {
+                    //both are valid inputs
+                    double interestPaid = principal * (interest / 100);
+                    //Calculate the total
+                    double total = principal + interestPaid;
+
+                    Console.WriteLine(principal);
+                    Console.WriteLine($"{interest}%");
+                    Console.WriteLine();
+                    Console.WriteLine(interestPaid);
+                    Console.WriteLine(total);
+                }
+            }
