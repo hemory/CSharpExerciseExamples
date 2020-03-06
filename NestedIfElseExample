@@ -1,0 +1,58 @@
+ Console.WriteLine("What is your credit score?");
+            int creditScore = Convert.ToInt16(Console.ReadLine());
+
+            if (creditScore >= 650)
+            {
+                Console.WriteLine("What is your income?");
+                int income = Convert.ToInt32(Console.ReadLine());
+
+                if (income > 50000)
+                {
+                    Console.WriteLine("You get a loan");
+                }
+                else
+                {
+                    Console.WriteLine("No loan for you!");
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("We cant help you bruh");
+            }
+			
+			
+			
+			
+			 //Write a C# Sharp program to find whether a given year is a leap year or not.
+
+            int baseYear = 2020;
+
+            int yearInput = 2028;
+
+            int yearDifference = yearInput - baseYear;
+
+            if (yearDifference%4 == 0)
+            {
+                Console.WriteLine("This is a leap year");
+
+            }
+            else
+            {
+                Console.WriteLine("Not a leap year");
+            }
+
+            //Using DateTime
+            int year = 2019;
+            Console.WriteLine("Year = " + year);
+            if (DateTime.IsLeapYear(year))
+            {
+                Console.WriteLine("Leap Year!");
+            }
+            else
+            {
+                Console.WriteLine("Not a Leap Year!");
+            }
+
+
+            Console.ReadLine();
