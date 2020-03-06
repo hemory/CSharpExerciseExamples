@@ -1,0 +1,18 @@
+        {
+            // enter and store an amount to be multiplied by 2
+            Console.WriteLine("Enter a number to be multiplied by 2.");
+            double numberEntered = Convert.ToDouble(Console.ReadLine());
+
+            // initialize a variable to establish a loop continuation later
+            string shouldContinue;
+
+            // do while loop runs at least once, displaying doubled number; asks to continue or not
+            do
+            {
+                numberEntered *= 2;
+                Console.WriteLine(numberEntered);
+                Console.WriteLine("Hit any key to continue multiplying by 2, or [E] to end.");
+                shouldContinue = Console.ReadLine().ToLower();
+            } while (shouldContinue != "e");
+
+        }
