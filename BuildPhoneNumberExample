@@ -1,0 +1,24 @@
+ public static void BuildPhoneNumber(long number)
+        {
+            //Write your code below this line...
+
+            if (number.ToString().Length == 10 )
+            {
+                string myNumber = number.ToString();
+
+                string area = myNumber.Substring(0, 3);
+                string threeDigits = myNumber.Substring(3, 3);
+                string fourDigits = myNumber.Substring(6);
+
+                string formatted = $"({area}){threeDigits}-{fourDigits}";
+
+                Console.WriteLine(formatted);
+            }
+            else
+            {
+                Console.WriteLine("Your input is invalid");
+            }
+            
+          
+
+        }
