@@ -1,0 +1,287 @@
+			//EXERCISE 1:
+			
+			bool result;
+            
+            int numberOne = 10;
+            int numberTwo = 20;
+            
+            //Compare if two values are equal
+            if (numberOne == numberTwo)
+            {
+                result = true;
+                Console.WriteLine(result);
+            }
+            
+            //Compare to see if one integer is greater than the other
+            if (numberOne > numberTwo)
+            {
+                result = true;
+                Console.WriteLine(result);
+            }
+            
+            //Compare to see if one integer is less than the other
+            if (numberOne < numberTwo)
+            {
+                result = true;
+                Console.WriteLine(result);
+            }
+            
+            //Compare to see if one integer is greater than or equal to the other
+            if (numberOne >= numberTwo)
+            {
+                result = true;
+                Console.WriteLine(result);
+            }
+            
+            //Compare to see if one integer is less than or equal to the other
+            if (numberOne <= numberTwo)
+            {
+                result = true;
+                Console.WriteLine(result);
+            }
+            
+            //Compare to see if one integer is not equal to the other
+            if (numberOne != numberTwo)
+            {
+                result = true;
+                Console.WriteLine(result);
+            }
+
+
+
+            bool isEating = true;
+            bool isHungry = true;
+            
+            //Create a statement that executes if isEating and isHungry are both true
+            if (isEating && isHungry)
+            {
+                Console.WriteLine("true");
+            }
+            
+            
+            //Create a statement that executes if isEating or isHungry is true
+            if (isEating || isHungry)
+            {
+                Console.WriteLine("true");
+            }
+            
+            //Create a statement that executes if isEating is not true
+            if (isEating != true)
+            {
+                Console.WriteLine("true");
+            }
+            
+            //or
+            
+            if (!isEating)
+            {
+                Console.WriteLine("true");
+            }
+
+            int valueOne = 5;
+            int valueTwo = 6;
+
+
+            bool flag = (valueOne < 0) || (valueTwo > 0);
+
+            Console.WriteLine(flag);
+
+            string outputMessage;
+            if ((valueOne == 2) && (valueTwo < 0))
+            {
+                outputMessage = "Message 1";
+                Console.WriteLine(outputMessage);
+            }
+            else
+            {
+                outputMessage = "Message 2";
+                Console.WriteLine(outputMessage);
+
+            }
+
+
+            bool valueOneIsPositive = (valueOne > 0);
+            outputMessage = "Message 1";
+            if (!valueOneIsPositive)
+            {
+                outputMessage = "Message 2";
+                Console.WriteLine(outputMessage);
+            }
+			
+			
+			//EXERCISE 3: Coin Toss
+			
+			 Console.WriteLine("Guess the coin toss! (H)eads or (T)ails?");
+            //gather user input
+            string headsTailsGuess = Console.ReadLine().ToLower();
+            //generate a random number
+            Random randomNumberGenerator = new Random();
+            //assign random number to variable coin
+            int coin = randomNumberGenerator.Next(0, 2);
+            //heads is 1, tails is 0
+
+
+            if (headsTailsGuess == "h" && coin == 1 || headsTailsGuess == "t" && coin == 0)
+            {
+                Console.WriteLine("You win!");
+            }
+            else
+            {
+                Console.WriteLine("You lose!");
+            }
+			
+			
+			//EXERCISE 4: Conditions
+			Console.WriteLine("Give me a number");
+			int input = Convert.ToInt32(Console.ReadLine());
+ 
+			const int age = 18;
+ 
+			if (input >= age)
+			{
+				Console.WriteLine("You have access!");
+			}
+			else
+			{
+				Console.WriteLine("No Access!");
+			}
+			
+			
+			
+			//EXERCISE 5: Switch Statements
+			Console.WriteLine("Welcome to the Dad Joke App.");
+			Console.WriteLine("Choose an option (1) , (2) , (3) , (4)");
+			int userChoice = Convert.ToInt32(Console.ReadLine());
+			 
+			switch (userChoice)
+			{
+				case 1:
+					Console.WriteLine("Guess what time the man went to the dentist?");
+					Console.WriteLine("Answer: Tooth hurt-y!");
+					break;
+				case 2:
+					Console.WriteLine("Did you hear about the kidnapping at school?");
+					Console.WriteLine("It's fine. He woke up.");
+					break;
+				case 3:
+					Console.WriteLine("What do you call a Bee that comes from America?");
+					Console.WriteLine("A USB");
+					break;
+				case 4:
+					Console.WriteLine("Waiter: Do you want a box for your leftovers?");
+					Console.WriteLine("No, But I will box you for them.");
+					break;
+			}
+
+			//Challenge 1:
+			Console.WriteLine("Give me an integer 1 and I will tell you the day of the week.");
+			int input = Convert.ToInt32(Console.ReadLine());
+			 
+			switch (input)
+			{
+				case 1:
+					Console.WriteLine("Monday");
+					break;
+				case 2:
+					Console.WriteLine("Tuesday");
+					break;
+				case 3:
+					Console.WriteLine("Wednesday");
+					break;
+				case 4:
+					Console.WriteLine("Thursday");
+					break;
+				case 5:
+					Console.WriteLine("Friday");
+					break;
+				case 6:
+					Console.WriteLine("Saturday");
+					break;
+				case 7:
+					Console.WriteLine("Sunday");
+					break;
+				default:
+					Console.WriteLine("Please choose a valid selection");
+					break
+			}
+
+			//Challenge 2:
+			 Console.WriteLine("Give me an integer that is 1 through 12 and I will tell you how many days are in that month.");
+            int input = Convert.ToInt32(Console.ReadLine());
+
+            switch (input)
+            {
+                case 1:
+                    Console.WriteLine("There are 31 days in the month of January");
+                    break;
+                case 2:
+                    Console.WriteLine("There are 29 days in the month of February");
+                    break;
+                case 3:
+                    Console.WriteLine("There are 31 days in the month of March");
+                    break;
+                case 4:
+                    Console.WriteLine("There are 30 days in the month of April");
+                    break;
+                case 5:
+                    Console.WriteLine("There are 31 days in the month of May");
+                    break;
+                case 6:
+                    Console.WriteLine("There are 30 days in the month of June");
+                    break;
+                case 7:
+                    Console.WriteLine("There are 31 days in the month of July");
+                    break;
+                case 8:
+                    Console.WriteLine("There are 31 days in the month of August");
+                    break;
+                case 9:
+                    Console.WriteLine("There are 30 days in the month of September");
+                    break;
+                case 10:
+                    Console.WriteLine("There are 31 days in the month of October");
+                    break;
+                case 11:
+                    Console.WriteLine("There are 30 days in the month of November");
+                    break;
+                case 12:
+                    Console.WriteLine("There are 31 days in the month of December");
+                    break;
+				default:
+                    Console.WriteLine("Please choose a valid number");
+                    break;
+            }
+
+			//Challenge 3: 
+			
+			Console.WriteLine("What is your first number?");
+			double firstNumber = Convert.ToDouble(Console.ReadLine());
+			 
+			Console.WriteLine("What is your second number?");
+			double secondNumber = Convert.ToDouble(Console.ReadLine());
+			 
+			 
+			 
+			Console.WriteLine("Choose your operator 1(+) , 2(-) , 3(*) , 4(/) ");
+			int choice = Convert.ToInt32(Console.ReadLine());
+			 
+			 
+			switch (choice)
+			{
+				case 1:
+					Console.WriteLine($"The sum is {firstNumber + secondNumber}");
+					break;
+				case 2:
+					Console.WriteLine($"The difference is {firstNumber - secondNumber}");
+					break;
+				case 3:
+					Console.WriteLine($"The product is {firstNumber * secondNumber}");
+					break;
+				case 4:
+					Console.WriteLine($"The quotient is {firstNumber / secondNumber}");
+					break;
+				default:
+					Console.WriteLine("Please choose a valid selection");
+					break;
+			}
+
