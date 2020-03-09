@@ -1,0 +1,76 @@
+int currentTemp = 70;
+            string temperatureMessage = "";
+            int option = 0;
+            bool keepGoing = true;
+
+           
+
+
+            while (keepGoing)
+            {
+                Console.WriteLine("Heat is ON");
+                Console.WriteLine($"Current temp is {currentTemp}");
+                Console.WriteLine("Turn the heat up to what?");
+                int desiredTemp = Convert.ToInt16(Console.ReadLine());
+
+                if (currentTemp > desiredTemp)
+                {
+                    option = 1;
+                }
+                else
+                {
+                    option = 2;
+                }
+
+                while (true)
+                {
+                    if (option == 1)
+                    {
+                        currentTemp--;
+                        Console.WriteLine($"The current temp is {currentTemp}");
+
+                        if (desiredTemp == currentTemp)
+                        {
+                            temperatureMessage = "Desired temp has been reached";
+
+                            break;
+                        }
+                    }
+                    else if (option == 2)
+                    {
+                        currentTemp++;
+                        Console.WriteLine($"Cabin temp is {currentTemp}");
+
+
+
+                        if (currentTemp >= 85)
+                        {
+                            temperatureMessage = "Maximum temp has been reached";
+                            break;
+                        }
+
+                        else if (currentTemp == desiredTemp)
+                        {
+                            temperatureMessage = "Desired temp has been reached";
+                            break;
+                        }
+                    }
+
+                }
+
+                Console.WriteLine(temperatureMessage);
+
+                Console.WriteLine("Would you like to change the temp again? y or n");
+
+               string userInput = Console.ReadLine().ToLower();
+
+               if (userInput != "y")
+               {
+                   keepGoing = false;
+                   Console.WriteLine("See you next time");
+               }
+
+            }
+
+
+            Console.ReadLine();
