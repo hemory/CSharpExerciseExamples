@@ -8,17 +8,18 @@ int currentTemp = 70;
 
             while (keepGoing)
             {
-                Console.WriteLine("Heat is ON");
                 Console.WriteLine($"Current temp is {currentTemp}");
-                Console.WriteLine("Turn the heat up to what?");
+                Console.WriteLine("What temp would you like?");
                 int desiredTemp = Convert.ToInt16(Console.ReadLine());
 
                 if (currentTemp > desiredTemp)
                 {
+                    Console.WriteLine("AC is ON");
                     option = 1;
                 }
                 else
                 {
+                    Console.WriteLine("HEAT is ON");
                     option = 2;
                 }
 
@@ -33,6 +34,12 @@ int currentTemp = 70;
                         {
                             temperatureMessage = "Desired temp has been reached";
 
+                            break;
+                        }
+
+                        if (currentTemp <= 60)
+                        {
+                            temperatureMessage = "Minimum temp has been reached"; 
                             break;
                         }
                     }
