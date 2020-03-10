@@ -1,0 +1,63 @@
+//This call CalculateCostMethod()
+           CalculateTotalCost();
+
+
+           //This call CalculateCostMethod2()
+           Console.WriteLine(CalculateTotalCost2());
+
+
+           //This call CalculateCostMethod3()
+           double price = 30;
+           double tax = .06;
+
+           CalculateTotalCost3(price, tax);
+
+           //This call CalculateCostMethod4()
+           double anotherPrice = 50;
+           double anotherTax = .06;
+
+           Console.WriteLine(CalculateTotalCost4(anotherPrice, anotherTax));
+
+        }
+
+        public static void CalculateTotalCost()
+        {
+            double price = 25;
+            double tax = .06;
+
+            double taxedAmount = price * tax;
+
+            double total = price + taxedAmount;
+
+            Console.WriteLine(total);
+        }
+
+        public static double CalculateTotalCost2()
+        {
+            double price = 25;
+            double tax = .06;
+
+            double taxedAmount = price * tax;
+
+            double total = price + taxedAmount;
+
+            return total;
+        }
+
+        public static void CalculateTotalCost3(double priceInput, double taxInput)
+        {
+            double taxedAmount = priceInput * taxInput;
+
+            double total = priceInput + taxedAmount;
+
+            Console.WriteLine(total);
+        }
+
+        public static double CalculateTotalCost4(double priceInput, double taxInput)
+        {
+            double taxedAmount = priceInput * taxInput;
+
+            double total = priceInput + taxedAmount;
+
+            return total;
+        }
