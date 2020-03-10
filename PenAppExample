@@ -1,0 +1,15 @@
+Create a Pen Class with the following properties:
+	- PenSize - used to determine if the text will be written in a all caps or all lowercase
+	- InkAmount - should be set to 100 and is used to determine how much ink is left to write
+	- IsOpen - used to determine of the cap is off the pen so that it can be used to write
+	
+Actions: 
+
+
+	- App should ask user what message they would like to write to the console.
+	- If the pen is open then allow it to write to the console, when the pen is not writing the pen needs to be closed.
+	- The pen should reduce 1 from the InkAmount foreach character written to the console. 
+		- If the ink amount is 0 or less the pen should no longer write messages
+	- The user should have a choice to choose a pen size to write in all caps or in lowercase or regular to write the message as they entered it
+	- Give user the option to choose a pen color Hint: Console.ForegroundColor = ConsoleColor.Blue; 
+	
