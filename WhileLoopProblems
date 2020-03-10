@@ -40,3 +40,70 @@ on the table
 5.4 Pick up the appropriate number of sticks.
 5.5 Take the sticks off the table
 5.6 See if there is a winner
+
+
+
+
+
+EXERCISE 2: DO WHILE – MONTH VALIDATOR
+•	Create an app that asks a user to enter a month by number (1-12)
+•	The app should at least ask the user the to enter a month number once before for checking the condition
+•	If the number falls outside of the expected range. Have the application continue to ask the user to enter a valid number
+
+EXERCISE 3: DO WHILE – CAN I GET A WINDOW SEAT?
+•	Create an app that asks passengers on a commuter airline if they want a window seat and keeps track of their responses
+•	The flight has 8 passengers and 4 window seats. Discontinue the loop when all the window seats are taken
+•	After the loop ends, display the number of window seats taken and the number of passengers questioned
+
+EXERCISE 4: DO WHILE – LET ME ASK YOU A QUESTION
+•	Create an app that asks the user what is your favorite color
+•	The app asks the user at least once
+•	Keep repeating the loop until the question is answered correctly
+
+
+EXERCISE 5: WHILE LOOP
+Part 1
+
+•	Ask the user to enter a number
+•	Store the number from the user as an integer called inputNumber
+•	While the value inside the inputNumber variable is less than or equal to 10 print the number to the Console
+•	This should create an infinite loop that writes the inputNumber forever
+•	Run the program and make sure everything works as expected
+
+Part 2
+
+•	Create another variable, outside the loop, that will act as a counter and set its value to 1. Name this variable counter. 
+•	Inside the while loop (from Part 1), increment the counter variable
+•	Create a conditional statement that checks if the counter variable is greater than 10. If the counter variables value is greater than 10, then the program should break out of the loop. 
+•	This should print the value in the inputNumber variable to the Console 10 times
+•	Run the program and make sure everything works as expected 
+
+Part 3 
+
+•	Create one last integer variable named result inside the While loop
+•	Set the result variable’s value to the inputNumber variable multiplied by the counter variable
+•	Refactor your current Console.WriteLine() to a formatted string that reads: inputNumber x counter = result
+•	Your result should look like the image on the right if the number entered is 8 
+
+ 
+
+EXERCISE 6: WHILE LOOP – NUMBER BRACKETS
+•	Write a method with a while loop to print 1 through n in square brackets. For example, if n = 6 print: [1] [2] [3] [4] [5] [6]
+
+EXERCISE 7: WHILE LOOP – KEEP IT POSITIVE
+•	Write a program to keep asking for a number until you enter a negative number. At the end, print the sum of all entered numbers.
+
+EXERCISE 8: WHILE LOOP – TELL ME WHEN
+•	Write a program to ask for a name until the user enters END. Print the name each time. When you are done, print "I am done."
+
+EXERCISE 9: WHILE LOOP – TEST AVERAGE
+•	Write a program that continues to ask a user for a graded score until the user enters a negative number
+•	Divide the total by the number of courses (consider each grade entered as a course)
+•	Print the corresponding letter grade based on the average
+•	Stop the application when the user enters a negative number
+
+EXERCISE 10: WHILE LOOP – WE NEED THAT MONEY SAM
+•	Sam got a loan for $150,000. His annual interest rate is 3.4% on a 15 year loan.
+•	After 5 years, Sam’s interest rate will go up 2% 
+•	Write an application that prints the total amount of interest Sam will pay annually to the Console and shows the difference after year 5.
+
