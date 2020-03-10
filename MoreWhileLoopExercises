@@ -1,0 +1,21 @@
+Create an app that asks passengers on a commuter airline if they want a window seat and keeps track of their responses. 
+The flight has 8 passengers and 4 window seats. Discontinue the loop when all the window seats are taken.
+After the loop ends, display the number of window seats taken and the number of passengers questioned.
+
+Exercise
+• Write a method with a while loop to prints 1 through
+n in square brackets. For example, if n = 6 print
+[1] [2] [3] [4] [5] [6]
+
+Exercise: Cumulative Sum
+• Write a method with a while loop that computes the
+sum of first n positive integers:
+sum = 1 + 2 + 3 + … + n
+Examples:
+n = 5 sum = 15
+n = 19 sum = 190 
+
+Exercise: Fencepost Loop
+• Write a method with a while loop that prints 1
+through n, separated by commas. E.g., for n = 9 print
+1, 2, 3, 4, 5, 6, 7, 8, 9
