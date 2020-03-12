@@ -1,0 +1,24 @@
+ Console.WriteLine("Welcome to the Rotary Phone App!");
+
+            PhoneDialer();
+
+
+            Console.ReadLine();
+        }
+
+        private static void PhoneDialer()
+        {
+
+
+            for (int j = 1; j <= 11; j++)
+            {
+                Console.Write($"Dial a number between 0 - 9 for number {j}: ");
+                int num1 = Convert.ToInt16(Console.ReadLine());
+
+                for (int i = num1; i >= 0; i--)
+                {
+                    Console.Write($"[{i}] ");
+                }
+
+                Console.WriteLine();
+            }
